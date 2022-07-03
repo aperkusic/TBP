@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Splash&display=swap");
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr;
+}
+
+header>h1 {
+    grid-column: 2/3;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Splash", cursive;
+}
+
+header>button {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 2.5em;
+    grid-column: 3/4;
+    grid-row: 1/1;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.logout__button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 30px;
+    width: 40px;
+    background-color: rgba(128, 128, 128, 0.287);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tablica {
+    background-color: rgba(128, 128, 128, 0.276);
+    border-collapse: collapse;
+    width: 50vw;
+    height: 500px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    overflow-y: scroll;
+    display: block;
+}
+
+#tablica th,
+#tablica td {
+    text-align: left;
+    padding: 18px;
+}
+
+#tablica tr:hover {
+    background-color: #8b8b8b1d;
+}
+
+#tablica tr {
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    color: #090909;
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.titleOfCard {
+    cursor: pointer;
+}
+
+.center {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset {
+    cursor: pointer;
+}

@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Splash&display=swap");
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr;
+}
+
+header>h1 {
+    grid-column: 2/3;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Splash", cursive;
+}
+
+header>button {
+    justify-self: end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 2.5em;
+    grid-column: 3/4;
+    grid-row: 1/1;
+    border: 0;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.logout__button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    height: 30px;
+    width: 40px;
+    background-color: rgba(128, 128, 128, 0.287);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weekend-days {
+    display: none;
+}
+
+#form__create {
+    padding: 50px;
+    width: 50vw;
+    background-color: rgba(128, 128, 128, 0.263);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#form__ul {
+    list-style: none;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form__ul>h1 {
+    margin-bottom: 20px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(128, 128, 128, 0.371);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    background-color: rgb(255, 251, 251);
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    width: 40vw;
+    min-height: 250px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    gap: 20px;
+}
+
+.dialog__chk {
+    display: flex;
+    gap: 10px;
+}
+
+.dialog__text {
+    height: 100px;
+    width: 50%;
+    text-align: left;
+    max-width: 500px;
+}
+
+.schedule__continer {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 10px;
+    width: 80vw;
+}
+
+.schedule__card {
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    background-color: rgba(220, 220, 220, 0.603);
+}
+
+.schedule__card-line {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+}
+
+.schedule__card__buttons {
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.btn-UD {
+    background-color: transparent;
+    border: 1px solid rgba(128, 128, 128, 0.301);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container>button {
+    align-self: flex-end;
+}
+
+.reset:hover {
+    cursor: pointer;
+}
+
+.titleOfSchedule {
+    visibility: hidden;
+}
+
+#myInput {
+    width: 50%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
+
+#tablica {
+    border-collapse: collapse;
+    width: 50%;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    overflow-y: scroll;
+    height: 200px;
+    display: block;
+}
+
+#tablica th,
+#tablica td {
+    text-align: left;
+    padding: 18px;
+}
+
+#tablica tr:hover {
+    background-color: #8b8b8b1d;
+}
+
+#tablica tr {
+    border-bottom: 1px solid #ddd;
+}
+
+button {
+    color: #090909;
+    padding: 1px 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.titleOfCard {
+    cursor: pointer;
+}

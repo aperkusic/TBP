@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <title>Raspored</title>
+</head>
+
+<body>
+    <div class="card">
+        <div id="card-intro" class="card-intro">
+            <h1 class="card__title">Raspored</h1>
+            <img src="./img/user-svgrepo-com.svg" alt="" />
+            <div class="card__footer">
+                <button onclick="loginCard()" class="card__button login">
+            Prijava
+          </button>
+                <button onclick="signupCard()" class="card__button registration">
+            Registracija
+          </button>
+            </div>
+        </div>
+        <form id="card-login" class="card-login">
+            <h1 class="">Prijava</h1>
+            <label for="email-login">Email</label>
+            <input id="email-login" type="text" />
+            <label for="password-login">Lozinka</label>
+            <input id="password-login" type="password" />
+            <button class="loggin__button login">Prijavi se</button>
+        </form>
+        <form id="card-signup" class="card-signup">
+            <h1 class="">Registracija</h1>
+            <label for="name-signup">Ime</label>
+            <input id="name-signup" type="text" />
+            <label for="surname-signup">Prezime</label>
+            <input id="surname-signup" type="text" />
+            <label for="email-signup">Email</label>
+            <input id="email-signup" type="text" />
+            <label for="password-signup">Lozinka</label>
+            <input id="password-signup" type="password" />
+            <button class="password__button registration">Registriraj se</button>
+        </form>
+    </div>
+</body>
+
+</html>
